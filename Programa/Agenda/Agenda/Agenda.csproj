@@ -69,16 +69,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainAppAgenda.cs">
+    <Compile Include="AgendaTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainAppAgenda.Designer.cs">
-      <DependentUpon>MainAppAgenda.cs</DependentUpon>
+    <Compile Include="AgendaTestForm.Designer.cs">
+      <DependentUpon>AgendaTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainAppAgenda.resx">
-      <DependentUpon>MainAppAgenda.cs</DependentUpon>
+    <EmbeddedResource Include="AgendaTestForm.resx">
+      <DependentUpon>AgendaTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
