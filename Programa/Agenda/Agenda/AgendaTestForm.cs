@@ -114,8 +114,12 @@ namespace Agenda
             }
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddTaskForm add = new AddTaskForm();
+            add.Show();
 
 
+        }
     }
 }
