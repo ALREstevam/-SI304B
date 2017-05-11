@@ -16,5 +16,10 @@ namespace Agenda
         {
             InitializeComponent();
         }
+
+        private void trackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            labelImportance.Text = trackBar1.Value.ToString();
+        }
     }
 }

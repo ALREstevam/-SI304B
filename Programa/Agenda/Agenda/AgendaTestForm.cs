@@ -121,5 +121,11 @@ namespace Agenda
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DynamicExample dyne = new DynamicExample();
+            dyne.Show();
+        }
     }
 }

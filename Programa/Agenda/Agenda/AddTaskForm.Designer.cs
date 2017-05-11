@@ -36,9 +36,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelImportance = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -115,7 +115,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.labelImportance);
             this.panel1.Controls.Add(this.trackBar1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
@@ -128,24 +128,6 @@
             this.panel1.Size = new System.Drawing.Size(359, 256);
             this.panel1.TabIndex = 7;
             // 
-            // trackBar1
-            // 
-            this.trackBar1.LargeChange = 2;
-            this.trackBar1.Location = new System.Drawing.Point(178, 200);
-            this.trackBar1.Maximum = 5;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(289, 207);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "5";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -154,6 +136,26 @@
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Importância";
+            // 
+            // labelImportance
+            // 
+            this.labelImportance.AutoSize = true;
+            this.labelImportance.Location = new System.Drawing.Point(289, 207);
+            this.labelImportance.Name = "labelImportance";
+            this.labelImportance.Size = new System.Drawing.Size(13, 13);
+            this.labelImportance.TabIndex = 8;
+            this.labelImportance.Text = "5";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.LargeChange = 2;
+            this.trackBar1.Location = new System.Drawing.Point(178, 200);
+            this.trackBar1.Maximum = 5;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 7;
+            this.trackBar1.Value = 5;
+            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
             // 
             // AddTaskForm
             // 
@@ -182,7 +184,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelImportance;
         private System.Windows.Forms.TrackBar trackBar1;
     }
 }
