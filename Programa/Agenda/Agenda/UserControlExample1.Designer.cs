@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlExample1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelID = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -66,16 +67,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(233, 53);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "obs obs obs obs";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
+            this.label1.Size = new System.Drawing.Size(175, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Titulo Titulo Titulo Titulo";
+            this.label1.Text = "Lorem ipsum dolor sit amet, denique";
             // 
             // button1
             // 
