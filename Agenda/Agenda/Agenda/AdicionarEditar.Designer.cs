@@ -117,6 +117,7 @@
             this.buttonClean.TabIndex = 7;
             this.buttonClean.Text = "Limpar";
             this.buttonClean.UseVisualStyleBackColor = true;
+            this.buttonClean.Click += new System.EventHandler(this.buttonClean_Click);
             // 
             // trackBarImportance
             // 

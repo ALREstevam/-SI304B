@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskElement));
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonMoveRight = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@
             // buttonDelete
             // 
             this.buttonDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonDelete.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(113, 0);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(38, 25);
@@ -67,26 +67,31 @@
             // buttonMoveRight
             // 
             this.buttonMoveRight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonMoveRight.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMoveRight.Location = new System.Drawing.Point(74, 0);
             this.buttonMoveRight.Name = "buttonMoveRight";
             this.buttonMoveRight.Size = new System.Drawing.Size(39, 25);
             this.buttonMoveRight.TabIndex = 9;
             this.buttonMoveRight.Text = ">>";
             this.buttonMoveRight.UseVisualStyleBackColor = true;
+            buttonMoveRight.Click += new System.EventHandler(this.buttonMoveRight_Click);
             // 
             // buttonMoveLeft
             // 
             this.buttonMoveLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonMoveLeft.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMoveLeft.Location = new System.Drawing.Point(35, 0);
             this.buttonMoveLeft.Name = "buttonMoveLeft";
             this.buttonMoveLeft.Size = new System.Drawing.Size(39, 25);
             this.buttonMoveLeft.TabIndex = 8;
             this.buttonMoveLeft.Text = "<<";
             this.buttonMoveLeft.UseVisualStyleBackColor = true;
+            this.buttonMoveLeft.Click += new System.EventHandler(this.buttonMoveLeft_Click);
             // 
             // buttonEdit
             // 
             this.buttonEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonEdit.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEdit.Location = new System.Drawing.Point(0, 0);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(35, 25);
@@ -107,10 +112,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.01563F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.98438F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(462, 195);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
@@ -118,20 +122,22 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(3, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(943, 47);
+            this.labelTitle.Size = new System.Drawing.Size(943, 26);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "label1";
             // 
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Location = new System.Drawing.Point(3, 47);
+            this.labelDescription.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescription.Location = new System.Drawing.Point(3, 26);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(943, 13);
+            this.labelDescription.Size = new System.Drawing.Size(207, 15);
             this.labelDescription.TabIndex = 4;
-            this.labelDescription.Text = resources.GetString("labelDescription.Text");
+            this.labelDescription.Text = "texto texto texto texto texto texto texto";
             // 
             // TaskElement
             // 
@@ -141,7 +147,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "TaskElement";
             this.Size = new System.Drawing.Size(462, 195);
-            this.Load += new System.EventHandler(this.ToDoElement_Load);
+            this.Load += new System.EventHandler(this.TaskElement_Load);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

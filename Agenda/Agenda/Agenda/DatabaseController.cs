@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using System.IO;
 
-
 namespace Database
 {
     public class DatabaseController
@@ -29,7 +28,7 @@ namespace Database
             if (!File.Exists(this.filePath))
             {
                 SQLiteConnection.CreateFile(this.filePath);
-                SQLiteConnection conn = dbConnect(this.connectionStr);
+                SQLiteConnection conn = dbConnect();
 
                 StringBuilder sql = new StringBuilder();
                 /*sql.AppendLine("CREATE TABLE IF NOT EXISTS tb_tasks ([id_task] INTEGER PRIMARY KEY AUTOINCREMENT,");
@@ -39,19 +38,25 @@ namespace Database
                 sql.AppendLine("[id] integer PRIMARY KEY AUTOINCREMENT,");
                 sql.AppendLine("[name] varchar(50),");
                 sql.AppendLine("[description] string(500),");
-                sql.AppendLine("[type] integer, NOT NUL");
+                sql.AppendLine("[type] integer NOT NULL,");
                 sql.AppendLine("[importance] integer NOT NULL");
                 sql.AppendLine(");");
 
-                dbExecuteQuery(sql.ToString(), conn);
+                if(dbExecuteQuery(sql.ToString(), conn))
+                {
+                    MessageBox.Show("O banco de dados foi criado","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
+
                 return "BANCO DE DADOS NÃO EXISTIA";
             }
+            //MessageBox.Show("O banco de dados já existia", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return "BANCO DE DADOS JÁ EXISTIA";
         }
 
-        public SQLiteConnection dbConnect(string connectionStr)
+        public SQLiteConnection dbConnect()
         {
-            SQLiteConnection conn = new SQLiteConnection(connectionStr);
+            SQLiteConnection conn = new SQLiteConnection(this.connectionStr);
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
@@ -67,16 +72,18 @@ namespace Database
             }
         }
 
-        public void dbExecuteQuery(string query, SQLiteConnection conn)
+        public bool dbExecuteQuery(string query, SQLiteConnection conn)
         {
             SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conn);
             try
             {
                 cmd.ExecuteNonQuery();
+                return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao executar comando: " + ex.Message);
+                MessageBox.Show("Erro ao executar comando: " + ex.Message, "Erro no banco de dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 

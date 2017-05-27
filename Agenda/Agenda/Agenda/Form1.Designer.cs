@@ -83,6 +83,7 @@
             this.buttonRefresh.TabIndex = 1;
             this.buttonRefresh.Text = "->";
             this.buttonRefresh.UseVisualStyleBackColor = true;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // buttonAddTask
             // 

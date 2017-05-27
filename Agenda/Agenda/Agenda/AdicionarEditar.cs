@@ -9,28 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaskItems;
 using Database;
+using System.Data.SQLite;
+
 
 namespace Agenda
 {
     public partial class AdicionarEditar : Form
     {
-
-
         AgendaItem agd;
+        Form1 myparent;
         enum frmtpy { newone, edit };
         private frmtpy type;
 
-        public AdicionarEditar()
+        public AdicionarEditar(Form1 parent)
         {
             InitializeComponent();
             type = frmtpy.newone;
+            agd = new AgendaItem();
+            agd.itemId = 0;
+            this.myparent = parent;
         }
 
-        public AdicionarEditar(AgendaItem agd)
+        public AdicionarEditar(AgendaItem agd, Form1 parent)
         {
             InitializeComponent();
             type = frmtpy.edit;
             this.agd = agd;
+            this.myparent = parent;
 
         }
 
@@ -47,6 +52,26 @@ namespace Agenda
         private void buttonSave_Click(object sender, EventArgs e)
         {
 
+            agd.setItem(textBoxName.Text, textBoxDescription.Text, itemTypeStrToNum(comboBoxState.Text), agd.itemId,trackBarImportance.Value);
+            DatabaseController dc = new DatabaseController("database.db");
+            SQLiteConnection conn = dc.dbConnect();
+            if (type == frmtpy.edit)
+            {
+                if (dc.dbExecuteQuery(agd.toSqlUpdateString(), conn))
+                {
+                    MessageBox.Show("Atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            else
+            {
+                if (dc.dbExecuteQuery(agd.toSqlInsertString(), conn))
+                {
+                    MessageBox.Show("Salvo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            myparent.dbToUi();
         }
 
         private void AdicionarEditar_Load(object sender, EventArgs e)
@@ -76,9 +101,32 @@ namespace Agenda
                 case 3:
                     return "Feito";
                 default:
-                    return "*";
+                    return "Fazer";
             }
         }
 
+        private int itemTypeStrToNum(string str)
+        {
+            switch (str)
+            {
+                case "Fazer":
+                    return 1;
+                case "Fazendo":
+                    return 2;
+                case "Feito":
+                    return 3;
+                default:
+                    return 1;
+            }
+        }
+
+        private void buttonClean_Click(object sender, EventArgs e)
+        {
+            textBoxName.Text = "";
+            textBoxDescription.Text = "";
+            comboBoxState.Text = "Fazer";
+            trackBarImportance.Value = 0;
+            labelImportance.Text = 0.ToString();
+        }
     }
 }
