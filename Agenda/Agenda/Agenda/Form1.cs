@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TaskItems;
+using Database;
+
 
 namespace Agenda
 {
@@ -20,6 +23,8 @@ namespace Agenda
         private void Form1_Load(object sender, EventArgs e)
         {
             responsiveDesignUpdate();
+            DatabaseController dbcontr = new DatabaseController("database");
+
 
         }
 
@@ -57,11 +62,36 @@ namespace Agenda
             flowLayoutPanelLine.Width = flowLayoutPanelBack.Width - 10;
             flowLayoutPanelLine.Height = (flowLayoutPanelBack.Height - flowLayoutPanelNames.Height) - 10;
 
+            foreach (TaskElement elem in flowLayoutPanelColumn1.Controls)
+            {
+  
+                elem.resize();
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAddTask_Click(object sender, EventArgs e)
         {
+            AdicionarEditar addedit = new AdicionarEditar();
+            addedit.Show();
+           
+        }
 
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanelColumn1.AutoScroll = true;
+            flowLayoutPanelColumn1.WrapContents = false;
+            flowLayoutPanelColumn1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+
+            AgendaItem agd = new AgendaItem();
+            agd.setItem("Um nome qualquer", "texto texto texto texto", 1, 1, 3);
+
+
+
+            flowLayoutPanelColumn1.Controls.Add(
+               new TaskElement(agd) { Parent = flowLayoutPanelColumn1}
+              );
+
+            ///////////****////////////
         }
     }
 }

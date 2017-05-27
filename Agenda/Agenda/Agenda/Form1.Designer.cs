@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonHelp = new System.Windows.Forms.Button();
+            this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonAddTask = new System.Windows.Forms.Button();
             this.flowLayoutPanelLine = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelColumn1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -36,14 +38,12 @@
             this.flowLayoutPanelColumn3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelNames = new System.Windows.Forms.FlowLayoutPanel();
             this.panelName1 = new System.Windows.Forms.Panel();
-            this.panelName2 = new System.Windows.Forms.Panel();
-            this.panelName3 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanelBack = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelName2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelName3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonRefresh = new System.Windows.Forms.Button();
-            this.buttonHelp = new System.Windows.Forms.Button();
+            this.flowLayoutPanelBack = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanelLine.SuspendLayout();
             this.flowLayoutPanelNames.SuspendLayout();
@@ -65,6 +65,25 @@
             this.panel1.Size = new System.Drawing.Size(54, 533);
             this.panel1.TabIndex = 0;
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Location = new System.Drawing.Point(3, 112);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(48, 44);
+            this.buttonHelp.TabIndex = 2;
+            this.buttonHelp.Text = "?";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.Location = new System.Drawing.Point(3, 62);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(48, 44);
+            this.buttonRefresh.TabIndex = 1;
+            this.buttonRefresh.Text = "->";
+            this.buttonRefresh.UseVisualStyleBackColor = true;
+            // 
             // buttonAddTask
             // 
             this.buttonAddTask.Location = new System.Drawing.Point(3, 12);
@@ -73,7 +92,7 @@
             this.buttonAddTask.TabIndex = 0;
             this.buttonAddTask.Text = "+";
             this.buttonAddTask.UseVisualStyleBackColor = true;
-            this.buttonAddTask.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
             // flowLayoutPanelLine
             // 
@@ -151,39 +170,6 @@
             this.panelName1.Size = new System.Drawing.Size(200, 56);
             this.panelName1.TabIndex = 0;
             // 
-            // panelName2
-            // 
-            this.panelName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(217)))));
-            this.panelName2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelName2.Controls.Add(this.label2);
-            this.panelName2.Location = new System.Drawing.Point(200, 0);
-            this.panelName2.Margin = new System.Windows.Forms.Padding(0);
-            this.panelName2.Name = "panelName2";
-            this.panelName2.Size = new System.Drawing.Size(200, 56);
-            this.panelName2.TabIndex = 1;
-            // 
-            // panelName3
-            // 
-            this.panelName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(250)))), ((int)(((byte)(234)))));
-            this.panelName3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelName3.Controls.Add(this.label3);
-            this.panelName3.Location = new System.Drawing.Point(400, 0);
-            this.panelName3.Margin = new System.Windows.Forms.Padding(0);
-            this.panelName3.Name = "panelName3";
-            this.panelName3.Size = new System.Drawing.Size(207, 56);
-            this.panelName3.TabIndex = 2;
-            // 
-            // flowLayoutPanelBack
-            // 
-            this.flowLayoutPanelBack.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.flowLayoutPanelBack.Controls.Add(this.flowLayoutPanelNames);
-            this.flowLayoutPanelBack.Controls.Add(this.flowLayoutPanelLine);
-            this.flowLayoutPanelBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelBack.Location = new System.Drawing.Point(54, 0);
-            this.flowLayoutPanelBack.Name = "flowLayoutPanelBack";
-            this.flowLayoutPanelBack.Size = new System.Drawing.Size(720, 533);
-            this.flowLayoutPanelBack.TabIndex = 3;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -197,6 +183,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Fazer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelName2
+            // 
+            this.panelName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(243)))), ((int)(((byte)(217)))));
+            this.panelName2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelName2.Controls.Add(this.label2);
+            this.panelName2.Location = new System.Drawing.Point(200, 0);
+            this.panelName2.Margin = new System.Windows.Forms.Padding(0);
+            this.panelName2.Name = "panelName2";
+            this.panelName2.Size = new System.Drawing.Size(200, 56);
+            this.panelName2.TabIndex = 1;
             // 
             // label2
             // 
@@ -212,6 +209,17 @@
             this.label2.Text = "Fazendo";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panelName3
+            // 
+            this.panelName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(250)))), ((int)(((byte)(234)))));
+            this.panelName3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelName3.Controls.Add(this.label3);
+            this.panelName3.Location = new System.Drawing.Point(400, 0);
+            this.panelName3.Margin = new System.Windows.Forms.Padding(0);
+            this.panelName3.Name = "panelName3";
+            this.panelName3.Size = new System.Drawing.Size(207, 56);
+            this.panelName3.TabIndex = 2;
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -226,23 +234,16 @@
             this.label3.Text = "Feito";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonRefresh
+            // flowLayoutPanelBack
             // 
-            this.buttonRefresh.Location = new System.Drawing.Point(3, 62);
-            this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(48, 44);
-            this.buttonRefresh.TabIndex = 1;
-            this.buttonRefresh.Text = "->";
-            this.buttonRefresh.UseVisualStyleBackColor = true;
-            // 
-            // buttonHelp
-            // 
-            this.buttonHelp.Location = new System.Drawing.Point(3, 112);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(48, 44);
-            this.buttonHelp.TabIndex = 2;
-            this.buttonHelp.Text = "?";
-            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.flowLayoutPanelBack.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.flowLayoutPanelBack.Controls.Add(this.flowLayoutPanelNames);
+            this.flowLayoutPanelBack.Controls.Add(this.flowLayoutPanelLine);
+            this.flowLayoutPanelBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelBack.Location = new System.Drawing.Point(54, 0);
+            this.flowLayoutPanelBack.Name = "flowLayoutPanelBack";
+            this.flowLayoutPanelBack.Size = new System.Drawing.Size(720, 533);
+            this.flowLayoutPanelBack.TabIndex = 3;
             // 
             // Form1
             // 
