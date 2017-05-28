@@ -131,6 +131,8 @@ namespace Agenda
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
+            HelpForm hlp = new HelpForm();
+            hlp.Show();
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)

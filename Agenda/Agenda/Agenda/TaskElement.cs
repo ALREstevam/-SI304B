@@ -29,7 +29,7 @@ namespace Agenda
             this.labelDescription.MaximumSize = new Size(this.tableLayoutPanel1.Width, 0);
         }
 
-        private void buttonDelete_Click(object sender, EventArgs e)//#
+        private void buttonDelete_Click(object sender, EventArgs e)
         {
             DatabaseController contr = new DatabaseController("database.db");
             SQLiteConnection conn = contr.dbConnect();
@@ -51,14 +51,20 @@ namespace Agenda
             switch (this.agd.itemType)
             {
                 case 1:
-                    this.BackColor = Color.Red;
+                    this.tableLayoutPanel1.BackColor = Color.FromArgb(255, 115, 109);
+                    this.labelDescription.ForeColor = Color.FromArgb(46, 0, 0);
+                    this.labelTitle.ForeColor = Color.FromArgb(46, 0, 0);
                     this.buttonMoveLeft.Dispose();
                     break;
                 case 2:
-                    this.BackColor = Color.Yellow;
+                    this.tableLayoutPanel1.BackColor = Color.FromArgb(255, 235, 105);
+                    this.labelDescription.ForeColor = Color.FromArgb(76, 36, 4);
+                    this.labelTitle.ForeColor = Color.FromArgb(76, 36, 4);
                     break;
                 case 3:
-                    this.BackColor = Color.Green;
+                    this.tableLayoutPanel1.BackColor = Color.FromArgb(125, 182, 255);
+                    this.labelDescription.ForeColor = Color.FromArgb(0, 0, 46);
+                    this.labelTitle.ForeColor = Color.FromArgb(0, 0, 46);
                     this.buttonMoveRight.Dispose();
                     break;
             }

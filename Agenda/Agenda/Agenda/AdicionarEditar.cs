@@ -59,7 +59,7 @@ namespace Agenda
             {
                 if (dc.dbExecuteQuery(agd.toSqlUpdateString(), conn))
                 {
-                    MessageBox.Show("Atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Atualizado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
             }
@@ -67,7 +67,7 @@ namespace Agenda
             {
                 if (dc.dbExecuteQuery(agd.toSqlInsertString(), conn))
                 {
-                    MessageBox.Show("Salvo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Salvo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
             }
