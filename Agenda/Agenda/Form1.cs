@@ -23,28 +23,46 @@ namespace Agenda
         private void Form1_Load(object sender, EventArgs e)
         {
             responsiveDesignUpdate();
+            toolStripStatusLabel1.Text = "Carregando dados do banco de dados";
             dbToUi();
 
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Atualizando design dos quadros";
             responsiveDesignUpdate();
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Atualizando design dos quadros";
             responsiveDesignUpdate();
         }
 
         public void dbToUi()
         {
+            toolStripStatusLabel1.Text = "Colocando dados do banco na tela";
             flowLayoutPanelColumn1.Controls.Clear();
             flowLayoutPanelColumn2.Controls.Clear();
             flowLayoutPanelColumn3.Controls.Clear();
 
+
+            toolStripStatusLabel1.Text = "Conectando ao banco";
             DatabaseController dbcontr = new DatabaseController("database.db");
-            dbcontr.dbCreate();
+
+            if (dbcontr.dbCreate())
+            {
+                toolStripStatusLabel1.Text = "Abrindo janela";
+                HelpForm hlp = new HelpForm(2);
+                hlp.Show();
+
+            }
+            
+            
+
+
+
             AgendaItem agd = new AgendaItem();
             List<AgendaItem> lista = new List<AgendaItem>();
             lista = agd.getAllFromDb();
@@ -61,6 +79,8 @@ namespace Agenda
             flowLayoutPanelColumn3.WrapContents = false;
             flowLayoutPanelColumn3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
 
+
+            toolStripStatusLabel1.Text = "Colocando dados do banco na tela";
             foreach (AgendaItem elem in lista)
             {
                 switch (elem.itemType)
@@ -82,10 +102,15 @@ namespace Agenda
                         break;
                 }
             }
+
+            
+
+
         }
 
         private void responsiveDesignUpdate()
         {
+            toolStripStatusLabel1.Text = "Atualizando design";
             //Altura e largura das colunas
             flowLayoutPanelColumn1.Height = flowLayoutPanelLine.Height - 10;
             flowLayoutPanelColumn2.Height = flowLayoutPanelLine.Height - 10;
@@ -125,20 +150,34 @@ namespace Agenda
 
         private void buttonAddTask_Click(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Abrindo janela";
             AdicionarEditar addedit = new AdicionarEditar(this);
             addedit.Show();
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            HelpForm hlp = new HelpForm();
+            toolStripStatusLabel1.Text = "Abrindo janela";
+            HelpForm hlp = new HelpForm(0);
             hlp.Show();
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text = "Atualizando dados";
             dbToUi();
         }
-     
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void buttonBugReport_Click(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Abrindo janela";
+            HelpForm hlp = new HelpForm(3);
+            hlp.Show();
+        }
     }
 }

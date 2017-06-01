@@ -156,16 +156,16 @@
             this.buttonClean.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClean.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonClean.Location = new System.Drawing.Point(405, 123);
+            this.buttonClean.Location = new System.Drawing.Point(466, 218);
             this.buttonClean.Name = "buttonClean";
-            this.buttonClean.Size = new System.Drawing.Size(75, 75);
+            this.buttonClean.Size = new System.Drawing.Size(32, 30);
             this.buttonClean.TabIndex = 7;
             this.buttonClean.UseVisualStyleBackColor = true;
             this.buttonClean.Click += new System.EventHandler(this.buttonClean_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSave.BackgroundImage")));
+            this.buttonSave.BackgroundImage = global::Agenda.Properties.Resources.Ok_96px;
             this.buttonSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSave.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
@@ -173,9 +173,9 @@
             this.buttonSave.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonSave.Location = new System.Drawing.Point(405, 42);
+            this.buttonSave.Location = new System.Drawing.Point(405, 52);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 75);
+            this.buttonSave.Size = new System.Drawing.Size(97, 97);
             this.buttonSave.TabIndex = 6;
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 254);
+            this.ClientSize = new System.Drawing.Size(510, 254);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonClean);
             this.Controls.Add(this.buttonSave);
@@ -192,6 +192,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdicionarEditar";
             this.Text = "AdicionarEditar";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.AdicionarEditar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarImportance)).EndInit();
             this.panel1.ResumeLayout(false);

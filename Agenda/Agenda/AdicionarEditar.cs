@@ -51,6 +51,13 @@ namespace Agenda
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            if (comboBoxState.Text == "")
+            {
+                MessageBox.Show("Você não escolheu um valor para o estado");
+                return;
+            }
+
+
 
             agd.setItem(textBoxName.Text, textBoxDescription.Text, itemTypeStrToNum(comboBoxState.Text), agd.itemId,trackBarImportance.Value);
             DatabaseController dc = new DatabaseController("database.db");
@@ -76,6 +83,8 @@ namespace Agenda
 
         private void AdicionarEditar_Load(object sender, EventArgs e)
         {
+            comboBoxState.SelectedIndex = 0;
+
             if (type == frmtpy.edit)
             {
                 this.Text = "Editar";

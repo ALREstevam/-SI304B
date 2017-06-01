@@ -118,7 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icons\About_48px.png" />
     <None Include="Icons\Todo List_96px.ico" />
     <None Include="Icons\About_96px.ico" />
     <None Include="Icons\Cancel_96px_3.png" />
@@ -146,34 +145,21 @@
     <None Include="Icons\Chevron Left_96px.png" />
     <None Include="Icons\Broom_96px.png" />
     <None Include="Icons\About_96px.png" />
+    <None Include="Icons\About_48px.png.png" />
     <Content Include="Icons\Back_96px.png" />
-    <Content Include="Icons\Cancel_48px.png" />
-    <Content Include="Icons\Cancel_96px.png" />
-    <Content Include="Icons\Cancel_96px_1.png" />
-    <Content Include="Icons\Checked_48px.png" />
-    <Content Include="Icons\Chevron Left_48px.png" />
-    <Content Include="Icons\Chevron Right_48px.png" />
-    <Content Include="Icons\Circled Chevron Left_48px.png" />
-    <Content Include="Icons\Circled Chevron Right_48px.png" />
-    <Content Include="Icons\Data Backup_48px.png" />
+    <None Include="Icons\Bug_96px.png" />
     <Content Include="Icons\Delete_96px.png" />
     <Content Include="Icons\Delete_96px_1.png" />
     <Content Include="Icons\Erase_96px.png" />
     <Content Include="Icons\Forward_96px.png" />
-    <Content Include="Icons\In Progress_48px.png" />
-    <Content Include="Icons\Maintenance_48px.png" />
-    <Content Include="Icons\Next_48px.png" />
     <Content Include="Icons\Ok_96px.png" />
+    <None Include="Icons\Paper Plane_96px.png" />
     <Content Include="Icons\Pin 2_96px.png" />
     <Content Include="Icons\Plus_96px.png" />
-    <Content Include="Icons\Plus_96px_1.png" />
-    <Content Include="Icons\Previous_48px.png" />
     <Content Include="Icons\Recurring Appointment_96px.png" />
-    <Content Include="Icons\Refresh_48px.png" />
-    <Content Include="Icons\Restart_96px.png" />
+    <None Include="Icons\Report Card_96px.png" />
     <Content Include="Icons\Save as_96px.png" />
     <Content Include="Icons\Save_96px.png" />
-    <Content Include="Icons\Settings_48px.png" />
     <Content Include="Icons\Todo List_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

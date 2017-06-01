@@ -63,6 +63,16 @@ namespace Agenda.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap About_48px_png {
+            get {
+                object obj = ResourceManager.GetObject("About_48px.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap About_96px {
             get {
                 object obj = ResourceManager.GetObject("About_96px", resourceCulture);
@@ -123,9 +133,9 @@ namespace Agenda.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cancel_96px {
+        internal static System.Drawing.Bitmap Bug_96px {
             get {
-                object obj = ResourceManager.GetObject("Cancel_96px", resourceCulture);
+                object obj = ResourceManager.GetObject("Bug_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +243,16 @@ namespace Agenda.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Delete_96px_11 {
+            get {
+                object obj = ResourceManager.GetObject("Delete_96px_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Edit_64px {
             get {
                 object obj = ResourceManager.GetObject("Edit_64px", resourceCulture);
@@ -323,6 +343,16 @@ namespace Agenda.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paper_Plane_96px {
+            get {
+                object obj = ResourceManager.GetObject("Paper Plane_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pencil_Tip_96px {
             get {
                 object obj = ResourceManager.GetObject("Pencil_Tip_96px", resourceCulture);
@@ -356,6 +386,16 @@ namespace Agenda.Properties {
         internal static System.Drawing.Bitmap Recurring_Appointment_96px {
             get {
                 object obj = ResourceManager.GetObject("Recurring_Appointment_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Report_Card_96px {
+            get {
+                object obj = ResourceManager.GetObject("Report_Card_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
