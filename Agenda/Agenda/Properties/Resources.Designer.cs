@@ -321,6 +321,15 @@ namespace Agenda.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;h1&gt;Manual do usuário&lt;/h1&gt;.
+        /// </summary>
+        internal static string manual {
+            get {
+                return ResourceManager.GetString("manual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Minus_64px {

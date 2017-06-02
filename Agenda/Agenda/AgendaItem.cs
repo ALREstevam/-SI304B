@@ -98,6 +98,14 @@ namespace TaskItems
 
         public string toSqlInsertString()
         {
+            if (this.itemName == String.Empty)
+            {
+                this.itemName = "Tarefa sem nome";
+            }
+            if (this.itemDescription == String.Empty)
+            {
+                this.itemDescription = "Tarefa sem descrição";
+            }
 
             return "INSERT INTO AgendaItem(name, description, type, importance) VALUES("
                 + "'"+this.itemName + "',"
@@ -109,6 +117,15 @@ namespace TaskItems
 
         public string toSqlUpdateString()
         {
+            if (this.itemName == String.Empty)
+            {
+                this.itemName = "Tarefa sem nome";
+            }
+            if (this.itemDescription == String.Empty)
+            {
+                this.itemDescription = "Tarefa sem descrição";
+            }
+
             return "UPDATE AgendaItem SET "
                 + "name = '" + this.itemName 
                 + "', description = '" + this.itemDescription 

@@ -51,10 +51,39 @@ namespace Agenda
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (comboBoxState.Text == "")
+            if (comboBoxState.Text == String.Empty)
             {
                 MessageBox.Show("Você não escolheu um valor para o estado");
                 return;
+            }
+
+            if(textBoxName.Text == String.Empty)
+            {
+                DialogResult res = MessageBox.Show("Você não escolheu nenhum nome para a tarefa, o nome padrão será utilizado.",
+                    "Está certo disso?",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Exclamation,
+                    MessageBoxDefaultButton.Button2
+                    );
+
+                if (res == System.Windows.Forms.DialogResult.No)
+                {
+                    return;
+                }
+            }
+
+            if(textBoxDescription.Text == String.Empty)
+            {
+                DialogResult res = MessageBox.Show("Você não escolheu nenhuma descição, a descrição padrão será utilizada.", 
+                    "Está certo disso?", 
+                    MessageBoxButtons.YesNo, 
+                    MessageBoxIcon.Exclamation, 
+                    MessageBoxDefaultButton.Button2
+                    );
+                if (res == System.Windows.Forms.DialogResult.No)
+                {
+                    return;
+                }
             }
 
 

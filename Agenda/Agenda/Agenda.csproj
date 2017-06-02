@@ -118,6 +118,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Manual\manual.html" />
     <None Include="Icons\Todo List_96px.ico" />
     <None Include="Icons\About_96px.ico" />
     <None Include="Icons\Cancel_96px_3.png" />

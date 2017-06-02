@@ -36,8 +36,8 @@ namespace Database
 
                 sql.AppendLine("CREATE TABLE IF NOT EXISTS AgendaItem (");
                 sql.AppendLine("[id] integer PRIMARY KEY AUTOINCREMENT,");
-                sql.AppendLine("[name] varchar(50),");
-                sql.AppendLine("[description] string(500),");
+                sql.AppendLine("[name] varchar(50) DEFAULT 'Tarefa sem nome',");
+                sql.AppendLine("[description] string(500) DEFAULT 'Tarefa sem descrição',");
                 sql.AppendLine("[type] integer NOT NULL,");
                 sql.AppendLine("[importance] integer NOT NULL");
                 sql.AppendLine(");");
@@ -45,7 +45,6 @@ namespace Database
                 if(dbExecuteQuery(sql.ToString(), conn))
                 {
                     MessageBox.Show("O banco de dados foi criado","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   
                 }
 
 

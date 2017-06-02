@@ -33,10 +33,29 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,29 +74,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -87,13 +96,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,6 +134,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.webBrowser1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -139,6 +142,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manual";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(3, 3);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(593, 463);
+            this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.Url = new System.Uri("http://manual.html", System.UriKind.Absolute);
             // 
             // tabPage2
             // 
@@ -151,6 +164,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sobre";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(24, 35);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(484, 13);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Este projeto foi desenvolvido para a disciplina Engenharia de Software II  (Turma" +
+    " B)";
             // 
             // label4
             // 
@@ -175,6 +199,181 @@
             this.tabPage3.Text = "Início rápido";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.pictureBox12);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.pictureBox10);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.pictureBox11);
+            this.groupBox4.Location = new System.Drawing.Point(262, 204);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(305, 194);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ajuda e reportando bugs";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(63, 133);
+            this.label18.MaximumSize = new System.Drawing.Size(240, 100);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(236, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "Envia uma mensagem para os desenvolvedores.";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox12.Image = global::Agenda.Properties.Resources.Paper_Plane_96px;
+            this.pictureBox12.Location = new System.Drawing.Point(6, 133);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 4;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(63, 76);
+            this.label13.MaximumSize = new System.Drawing.Size(240, 100);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(220, 26);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Abre a janela para enviar uma mensagem de falha no sistema para os desenvolvedore" +
+    "s.";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox10.Image = global::Agenda.Properties.Resources.Bug_96px;
+            this.pictureBox10.Location = new System.Drawing.Point(6, 76);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(63, 19);
+            this.label14.MaximumSize = new System.Drawing.Size(250, 100);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(227, 26);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Abre uma janela de ajuda que dará acesso ao início rápido e ao manual do usuário." +
+    "";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox11.Image = global::Agenda.Properties.Resources.Info_96px;
+            this.pictureBox11.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 0;
+            this.pictureBox11.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.pictureBox8);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.pictureBox9);
+            this.groupBox3.Location = new System.Drawing.Point(262, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(305, 177);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Editando e salvando uma tarefa";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(63, 70);
+            this.label17.MaximumSize = new System.Drawing.Size(200, 70);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(138, 13);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Salva a alteração da tarefa.";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(63, 32);
+            this.label16.MaximumSize = new System.Drawing.Size(200, 70);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(185, 13);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Salva o cadastro de uma nova tarefa.";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(63, 57);
+            this.label15.MaximumSize = new System.Drawing.Size(200, 70);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(126, 13);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Ao editar uma tarefa:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(63, 99);
+            this.label11.MaximumSize = new System.Drawing.Size(139, 26);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(121, 13);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Limpa todos os campos.";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox8.Image = global::Agenda.Properties.Resources.Broom_96px;
+            this.pictureBox8.Location = new System.Drawing.Point(6, 99);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(63, 19);
+            this.label12.MaximumSize = new System.Drawing.Size(200, 70);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(146, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Ao adicionar uma tarefa:\r\n";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox9.Image = global::Agenda.Properties.Resources.Ok_96px;
+            this.pictureBox9.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(51, 51);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label10);
@@ -191,6 +390,26 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gerenciando uma tarefa";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(63, 199);
+            this.label10.MaximumSize = new System.Drawing.Size(139, 26);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Deleta a tarefa.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(63, 142);
+            this.label9.MaximumSize = new System.Drawing.Size(139, 26);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 26);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Abre a janela de edição da tarefa.\r\n";
             // 
             // pictureBox6
             // 
@@ -393,212 +612,6 @@
             this.textBoxMessage.Size = new System.Drawing.Size(372, 137);
             this.textBoxMessage.TabIndex = 1;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(63, 142);
-            this.label9.MaximumSize = new System.Drawing.Size(139, 26);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 26);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Abre a janela de edição da tarefa.\r\n";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(63, 199);
-            this.label10.MaximumSize = new System.Drawing.Size(139, 26);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 13);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Deleta a tarefa.";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.pictureBox8);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.pictureBox9);
-            this.groupBox3.Location = new System.Drawing.Point(262, 21);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(305, 177);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Editando e salvando uma tarefa";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(63, 99);
-            this.label11.MaximumSize = new System.Drawing.Size(139, 26);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Limpa todos os campos.";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox8.Image = global::Agenda.Properties.Resources.Broom_96px;
-            this.pictureBox8.Location = new System.Drawing.Point(6, 99);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(63, 19);
-            this.label12.MaximumSize = new System.Drawing.Size(200, 70);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Ao adicionar uma tarefa:\r\n";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox9.Image = global::Agenda.Properties.Resources.Ok_96px;
-            this.pictureBox9.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.pictureBox12);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.pictureBox10);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.pictureBox11);
-            this.groupBox4.Location = new System.Drawing.Point(262, 204);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(305, 194);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Ajuda e reportando bugs";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(63, 76);
-            this.label13.MaximumSize = new System.Drawing.Size(240, 100);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(220, 26);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Abre a janela para enviar uma mensagem de falha no sistema para os desenvolvedore" +
-    "s.";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox10.Image = global::Agenda.Properties.Resources.Bug_96px;
-            this.pictureBox10.Location = new System.Drawing.Point(6, 76);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(63, 19);
-            this.label14.MaximumSize = new System.Drawing.Size(250, 100);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(227, 26);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Abre uma janela de ajuda que dará acesso ao início rápido e ao manual do usuário." +
-    "";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox11.Image = global::Agenda.Properties.Resources.Info_96px;
-            this.pictureBox11.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 0;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(63, 57);
-            this.label15.MaximumSize = new System.Drawing.Size(200, 70);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(126, 13);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Ao editar uma tarefa:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(63, 32);
-            this.label16.MaximumSize = new System.Drawing.Size(200, 70);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(185, 13);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Salva o cadastro de uma nova tarefa.";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(63, 70);
-            this.label17.MaximumSize = new System.Drawing.Size(200, 70);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 13);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Salva a alteração da tarefa.";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox12.Image = global::Agenda.Properties.Resources.Paper_Plane_96px;
-            this.pictureBox12.Location = new System.Drawing.Point(6, 133);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(51, 51);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(63, 133);
-            this.label18.MaximumSize = new System.Drawing.Size(240, 100);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(236, 13);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "Envia uma mensagem para os desenvolvedores.";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(24, 35);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(484, 13);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "Este projeto foi desenvolvido para a disciplina Engenharia de Software II  (Turma" +
-    " B)";
-            // 
             // HelpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,9 +627,19 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -629,15 +652,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -688,5 +702,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

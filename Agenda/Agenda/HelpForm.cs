@@ -24,7 +24,14 @@ namespace Agenda
         {
             tabControl1.SelectedIndex = this.iniTab;
             imageUpdate();
+
+            string html = Properties.Resources.manual;
+            webBrowser1.DocumentText = html;
+
         }
+
+        
+
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
