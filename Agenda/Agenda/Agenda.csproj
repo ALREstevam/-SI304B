@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{601604EA-23D4-488F-BB6D-4F8E55D67B94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agenda</RootNamespace>
+    <AssemblyName>Agenda</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons\Todo List_96px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.105.1, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.105.1\lib\net46\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdicionarEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarEditar.Designer.cs">
+      <DependentUpon>AdicionarEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgendaItem.cs" />
+    <Compile Include="DatabaseController.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskElement.Designer.cs">
+      <DependentUpon>TaskElement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdicionarEditar.resx">
+      <DependentUpon>AdicionarEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskElement.resx">
+      <DependentUpon>TaskElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Manual\manual.pdf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manual\manual_arquivos\image009.png" />
+    <None Include="Manual\manual_arquivos\image008.png" />
+    <None Include="Manual\manual_arquivos\image007.png" />
+    <None Include="Manual\manual_arquivos\image006.png" />
+    <None Include="Manual\manual_arquivos\image005.png" />
+    <None Include="Manual\manual_arquivos\image004.png" />
+    <None Include="Manual\manual_arquivos\image003.png" />
+    <None Include="Manual\manual_arquivos\image002.png" />
+    <None Include="Manual\manual_arquivos\image001.png" />
+    <None Include="Manual\manual_arquivos\image020.png" />
+    <None Include="Manual\manual_arquivos\image019.png" />
+    <None Include="Manual\manual_arquivos\image018.png" />
+    <None Include="Manual\manual_arquivos\image017.png" />
+    <None Include="Manual\manual_arquivos\image016.png" />
+    <None Include="Manual\manual_arquivos\image015.png" />
+    <None Include="Manual\manual_arquivos\image014.png" />
+    <None Include="Manual\manual_arquivos\image013.png" />
+    <None Include="Manual\manual_arquivos\image012.png" />
+    <None Include="Manual\manual_arquivos\image011.png" />
+    <None Include="Manual\manual_arquivos\image010.png" />
+    <None Include="Manual\manual.html" />
+    <None Include="Icons\Todo List_96px.ico" />
+    <None Include="Icons\About_96px.ico" />
+    <None Include="Icons\Cancel_96px_3.png" />
+    <None Include="Icons\Broom_96px_1.png" />
+    <None Include="Icons\Add_96px.png" />
+    <None Include="Icons\Save_96px_1.png" />
+    <None Include="Icons\Restart_96px_1.png" />
+    <None Include="Icons\Minus_64px.png" />
+    <None Include="Icons\Info_64px.png" />
+    <None Include="Icons\Edit_64px.png" />
+    <None Include="Icons\Circled Chevron Right_64px.png" />
+    <None Include="Icons\Circled Chevron Left_64px.png" />
+    <None Include="Icons\Synchronize_96px.png" />
+    <None Include="Icons\Support_96px.png" />
+    <None Include="Icons\Settings_96px.png" />
+    <None Include="Icons\Rotate Left_96px.png" />
+    <None Include="Icons\Pencil Tip_96px.png" />
+    <None Include="Icons\Info_96px.png" />
+    <None Include="Icons\Info Squared_96px.png" />
+    <None Include="Icons\Edit_96px.png" />
+    <None Include="Icons\Connection Sync_96px.png" />
+    <None Include="Icons\Circled Chevron Right_96px.png" />
+    <None Include="Icons\Circled Chevron Left_96px.png" />
+    <None Include="Icons\Chevron Right_96px.png" />
+    <None Include="Icons\Chevron Left_96px.png" />
+    <None Include="Icons\Broom_96px.png" />
+    <None Include="Icons\About_96px.png" />
+    <None Include="Icons\About_48px.png.png" />
+    <Content Include="Icons\Back_96px.png" />
+    <None Include="Icons\Bug_96px.png" />
+    <Content Include="Icons\Delete_96px.png" />
+    <Content Include="Icons\Delete_96px_1.png" />
+    <Content Include="Icons\Erase_96px.png" />
+    <Content Include="Icons\Forward_96px.png" />
+    <Content Include="Icons\Ok_96px.png" />
+    <None Include="Icons\Paper Plane_96px.png" />
+    <Content Include="Icons\Pin 2_96px.png" />
+    <Content Include="Icons\Plus_96px.png" />
+    <Content Include="Icons\Recurring Appointment_96px.png" />
+    <None Include="Icons\Report Card_96px.png" />
+    <Content Include="Icons\Save as_96px.png" />
+    <Content Include="Icons\Save_96px.png" />
+    <Content Include="Icons\Todo List_96px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
