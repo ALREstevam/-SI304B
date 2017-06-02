@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonBugReport = new System.Windows.Forms.Button();
+            this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonAddTask = new System.Windows.Forms.Button();
-            this.buttonRefresh = new System.Windows.Forms.Button();
             this.flowLayoutPanelLine = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelColumn1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanelColumn2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -47,9 +49,8 @@
             this.flowLayoutPanelBack = new System.Windows.Forms.FlowLayoutPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.buttonBugReport = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.flowLayoutPanelLine.SuspendLayout();
             this.flowLayoutPanelNames.SuspendLayout();
             this.panelName1.SuspendLayout();
@@ -57,7 +58,6 @@
             this.panelName3.SuspendLayout();
             this.flowLayoutPanelBack.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,6 +71,50 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(85, 552);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonBugReport);
+            this.panel2.Controls.Add(this.buttonRefresh);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 506);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(85, 46);
+            this.panel2.TabIndex = 4;
+            // 
+            // buttonBugReport
+            // 
+            this.buttonBugReport.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBugReport.BackgroundImage = global::Agenda.Properties.Resources.Bug_96px;
+            this.buttonBugReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonBugReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBugReport.FlatAppearance.BorderSize = 0;
+            this.buttonBugReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonBugReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBugReport.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonBugReport.Location = new System.Drawing.Point(0, 5);
+            this.buttonBugReport.Name = "buttonBugReport";
+            this.buttonBugReport.Size = new System.Drawing.Size(41, 41);
+            this.buttonBugReport.TabIndex = 3;
+            this.buttonBugReport.UseVisualStyleBackColor = false;
+            this.buttonBugReport.Click += new System.EventHandler(this.buttonBugReport_Click);
+            // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.BackgroundImage")));
+            this.buttonRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonRefresh.FlatAppearance.BorderSize = 0;
+            this.buttonRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefresh.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonRefresh.Location = new System.Drawing.Point(41, 2);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(41, 41);
+            this.buttonRefresh.TabIndex = 1;
+            this.buttonRefresh.UseVisualStyleBackColor = false;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // buttonHelp
             // 
@@ -107,23 +151,6 @@
             this.buttonAddTask.UseVisualStyleBackColor = false;
             this.buttonAddTask.Click += new System.EventHandler(this.buttonAddTask_Click);
             // 
-            // buttonRefresh
-            // 
-            this.buttonRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.buttonRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.BackgroundImage")));
-            this.buttonRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonRefresh.FlatAppearance.BorderSize = 0;
-            this.buttonRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRefresh.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonRefresh.Location = new System.Drawing.Point(41, 2);
-            this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(41, 41);
-            this.buttonRefresh.TabIndex = 1;
-            this.buttonRefresh.UseVisualStyleBackColor = false;
-            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
-            // 
             // flowLayoutPanelLine
             // 
             this.flowLayoutPanelLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
@@ -146,7 +173,7 @@
             this.flowLayoutPanelColumn1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelColumn1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelColumn1.Name = "flowLayoutPanelColumn1";
-            this.flowLayoutPanelColumn1.Size = new System.Drawing.Size(200, 448);
+            this.flowLayoutPanelColumn1.Size = new System.Drawing.Size(200, 456);
             this.flowLayoutPanelColumn1.TabIndex = 0;
             // 
             // flowLayoutPanelColumn2
@@ -158,7 +185,7 @@
             this.flowLayoutPanelColumn2.Location = new System.Drawing.Point(200, 0);
             this.flowLayoutPanelColumn2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelColumn2.Name = "flowLayoutPanelColumn2";
-            this.flowLayoutPanelColumn2.Size = new System.Drawing.Size(200, 448);
+            this.flowLayoutPanelColumn2.Size = new System.Drawing.Size(200, 456);
             this.flowLayoutPanelColumn2.TabIndex = 1;
             // 
             // flowLayoutPanelColumn3
@@ -167,10 +194,11 @@
             this.flowLayoutPanelColumn3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanelColumn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(111)))), ((int)(((byte)(204)))));
             this.flowLayoutPanelColumn3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanelColumn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowLayoutPanelColumn3.Location = new System.Drawing.Point(400, 0);
             this.flowLayoutPanelColumn3.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelColumn3.Name = "flowLayoutPanelColumn3";
-            this.flowLayoutPanelColumn3.Size = new System.Drawing.Size(207, 448);
+            this.flowLayoutPanelColumn3.Size = new System.Drawing.Size(207, 456);
             this.flowLayoutPanelColumn3.TabIndex = 2;
             // 
             // flowLayoutPanelNames
@@ -209,6 +237,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Fazer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelName2
             // 
@@ -233,6 +262,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Fazendo";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panelName3
             // 
@@ -257,6 +287,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Feito";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // flowLayoutPanelBack
             // 
@@ -271,46 +302,23 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(85, 530);
+            this.statusStrip1.Location = new System.Drawing.Point(85, 528);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(744, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(744, 24);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(47, 19);
             this.toolStripStatusLabel1.Text = "Status";
-            // 
-            // buttonBugReport
-            // 
-            this.buttonBugReport.BackColor = System.Drawing.Color.Transparent;
-            this.buttonBugReport.BackgroundImage = global::Agenda.Properties.Resources.Bug_96px;
-            this.buttonBugReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonBugReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBugReport.FlatAppearance.BorderSize = 0;
-            this.buttonBugReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonBugReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBugReport.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonBugReport.Location = new System.Drawing.Point(0, 5);
-            this.buttonBugReport.Name = "buttonBugReport";
-            this.buttonBugReport.Size = new System.Drawing.Size(41, 41);
-            this.buttonBugReport.TabIndex = 3;
-            this.buttonBugReport.UseVisualStyleBackColor = false;
-            this.buttonBugReport.Click += new System.EventHandler(this.buttonBugReport_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.buttonBugReport);
-            this.panel2.Controls.Add(this.buttonRefresh);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 506);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(85, 46);
-            this.panel2.TabIndex = 4;
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // Form1
             // 
@@ -331,6 +339,7 @@
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.flowLayoutPanelLine.ResumeLayout(false);
             this.flowLayoutPanelNames.ResumeLayout(false);
             this.panelName1.ResumeLayout(false);
@@ -339,7 +348,6 @@
             this.flowLayoutPanelBack.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

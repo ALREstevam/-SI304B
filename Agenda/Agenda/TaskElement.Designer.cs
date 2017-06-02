@@ -36,7 +36,7 @@
             this.buttonEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.labelDescription = new System.Windows.Forms.Label();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,10 +47,10 @@
             this.panel2.Controls.Add(this.buttonMoveRight);
             this.panel2.Controls.Add(this.buttonMoveLeft);
             this.panel2.Controls.Add(this.buttonEdit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 88);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(3, 122);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(943, 25);
+            this.panel2.Size = new System.Drawing.Size(519, 25);
             this.panel2.TabIndex = 2;
             // 
             // buttonDelete
@@ -67,6 +67,8 @@
             this.buttonDelete.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
             this.buttonDelete.Location = new System.Drawing.Point(75, 0);
+            this.buttonDelete.MaximumSize = new System.Drawing.Size(25, 25);
+            this.buttonDelete.MinimumSize = new System.Drawing.Size(25, 25);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(25, 25);
             this.buttonDelete.TabIndex = 10;
@@ -88,6 +90,8 @@
             this.buttonMoveRight.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMoveRight.ForeColor = System.Drawing.Color.White;
             this.buttonMoveRight.Location = new System.Drawing.Point(50, 0);
+            this.buttonMoveRight.MaximumSize = new System.Drawing.Size(25, 25);
+            this.buttonMoveRight.MinimumSize = new System.Drawing.Size(25, 25);
             this.buttonMoveRight.Name = "buttonMoveRight";
             this.buttonMoveRight.Size = new System.Drawing.Size(25, 25);
             this.buttonMoveRight.TabIndex = 9;
@@ -109,6 +113,8 @@
             this.buttonMoveLeft.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMoveLeft.ForeColor = System.Drawing.Color.White;
             this.buttonMoveLeft.Location = new System.Drawing.Point(25, 0);
+            this.buttonMoveLeft.MaximumSize = new System.Drawing.Size(25, 25);
+            this.buttonMoveLeft.MinimumSize = new System.Drawing.Size(25, 25);
             this.buttonMoveLeft.Name = "buttonMoveLeft";
             this.buttonMoveLeft.Size = new System.Drawing.Size(25, 25);
             this.buttonMoveLeft.TabIndex = 8;
@@ -130,6 +136,8 @@
             this.buttonEdit.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEdit.ForeColor = System.Drawing.Color.White;
             this.buttonEdit.Location = new System.Drawing.Point(0, 0);
+            this.buttonEdit.MaximumSize = new System.Drawing.Size(25, 25);
+            this.buttonEdit.MinimumSize = new System.Drawing.Size(25, 25);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(25, 25);
             this.buttonEdit.TabIndex = 7;
@@ -145,7 +153,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelTitle, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.labelDescription, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxDescription, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -153,7 +161,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.63701F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.36299F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(460, 116);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(460, 150);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // labelTitle
@@ -163,19 +171,25 @@
             this.labelTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(3, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(943, 20);
+            this.labelTitle.Size = new System.Drawing.Size(519, 28);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "label1";
+            this.labelTitle.DoubleClick += new System.EventHandler(this.labelTitle_DoubleClick);
             // 
-            // labelDescription
+            // textBoxDescription
             // 
-            this.labelDescription.AutoSize = true;
-            this.labelDescription.Font = new System.Drawing.Font("Calibri Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescription.Location = new System.Drawing.Point(3, 20);
-            this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(207, 15);
-            this.labelDescription.TabIndex = 4;
-            this.labelDescription.Text = "texto texto texto texto texto texto texto";
+            this.textBoxDescription.BackColor = System.Drawing.Color.White;
+            this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescription.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxDescription.Location = new System.Drawing.Point(3, 31);
+            this.textBoxDescription.Multiline = true;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxDescription.Size = new System.Drawing.Size(519, 85);
+            this.textBoxDescription.TabIndex = 4;
+            this.textBoxDescription.DoubleClick += new System.EventHandler(this.textBoxDescription_DoubleClick);
             // 
             // TaskElement
             // 
@@ -185,7 +199,7 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "TaskElement";
-            this.Size = new System.Drawing.Size(460, 116);
+            this.Size = new System.Drawing.Size(460, 150);
             this.Load += new System.EventHandler(this.TaskElement_Load);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -198,10 +212,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonMoveRight;
         private System.Windows.Forms.Button buttonMoveLeft;
         private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.TextBox textBoxDescription;
     }
 }

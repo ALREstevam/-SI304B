@@ -25,8 +25,8 @@ namespace Agenda
             tabControl1.SelectedIndex = this.iniTab;
             imageUpdate();
 
-            string html = Properties.Resources.manual;
-            webBrowser1.DocumentText = html;
+            /*string html = Properties.Resources.manual;
+            webBrowser1.DocumentText = html;*/
 
         }
 
@@ -81,6 +81,16 @@ namespace Agenda
             }
 
             MessageBox.Show("Mensagem enviada com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://a166348.000webhostapp.com/Manual%20do%20Usu%C3%A1rio.pdf");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

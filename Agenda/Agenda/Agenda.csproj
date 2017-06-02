@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons\Todo List_96px.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -103,6 +106,7 @@
     <EmbeddedResource Include="TaskElement.resx">
       <DependentUpon>TaskElement.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Manual\manual.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +122,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Manual\manual_arquivos\image009.png" />
+    <None Include="Manual\manual_arquivos\image008.png" />
+    <None Include="Manual\manual_arquivos\image007.png" />
+    <None Include="Manual\manual_arquivos\image006.png" />
+    <None Include="Manual\manual_arquivos\image005.png" />
+    <None Include="Manual\manual_arquivos\image004.png" />
+    <None Include="Manual\manual_arquivos\image003.png" />
+    <None Include="Manual\manual_arquivos\image002.png" />
+    <None Include="Manual\manual_arquivos\image001.png" />
+    <None Include="Manual\manual_arquivos\image020.png" />
+    <None Include="Manual\manual_arquivos\image019.png" />
+    <None Include="Manual\manual_arquivos\image018.png" />
+    <None Include="Manual\manual_arquivos\image017.png" />
+    <None Include="Manual\manual_arquivos\image016.png" />
+    <None Include="Manual\manual_arquivos\image015.png" />
+    <None Include="Manual\manual_arquivos\image014.png" />
+    <None Include="Manual\manual_arquivos\image013.png" />
+    <None Include="Manual\manual_arquivos\image012.png" />
+    <None Include="Manual\manual_arquivos\image011.png" />
+    <None Include="Manual\manual_arquivos\image010.png" />
     <None Include="Manual\manual.html" />
     <None Include="Icons\Todo List_96px.ico" />
     <None Include="Icons\About_96px.ico" />

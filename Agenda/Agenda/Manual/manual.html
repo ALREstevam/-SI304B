@@ -1,17 +1,571 @@
 <html>
-<head>
-    <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-    </style>
+<head>
+<meta http-equiv=Content-Type content="text/html" charset=utf-8>
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Título 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-21.6pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;}
+h2
+	{mso-style-link:"Título 2 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.8pt;
+	margin-bottom:.0001pt;
+	text-indent:-28.8pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria",serif;
+	color:#4F81BD;}
+h3
+	{mso-style-link:"Título 3 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-36.0pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;
+	color:#4F81BD;}
+h4
+	{mso-style-link:"Título 4 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:43.2pt;
+	margin-bottom:.0001pt;
+	text-indent:-43.2pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-style:italic;}
+h5
+	{mso-style-link:"Título 5 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:50.4pt;
+	margin-bottom:.0001pt;
+	text-indent:-50.4pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;
+	color:#243F60;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Título 6 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:57.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-57.6pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;
+	color:#243F60;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Título 7 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:64.8pt;
+	margin-bottom:.0001pt;
+	text-indent:-64.8pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Título 8 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-72.0pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria",serif;
+	color:#404040;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Título 9 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:79.2pt;
+	margin-bottom:.0001pt;
+	text-indent:-79.2pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria",serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Texto de balão Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-21.6pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	font-weight:bold;}
+span.TextodebaloChar
+	{mso-style-name:"Texto de balão Char";
+	mso-style-link:"Texto de balão";
+	font-family:"Tahoma",sans-serif;}
+span.Ttulo1Char
+	{mso-style-name:"Título 1 Char";
+	mso-style-link:"Título 1";
+	font-family:"Cambria",serif;
+	font-weight:bold;}
+span.Ttulo2Char
+	{mso-style-name:"Título 2 Char";
+	mso-style-link:"Título 2";
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo3Char
+	{mso-style-name:"Título 3 Char";
+	mso-style-link:"Título 3";
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo4Char
+	{mso-style-name:"Título 4 Char";
+	mso-style-link:"Título 4";
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.Ttulo5Char
+	{mso-style-name:"Título 5 Char";
+	mso-style-link:"Título 5";
+	font-family:"Cambria",serif;
+	color:#243F60;}
+span.Ttulo6Char
+	{mso-style-name:"Título 6 Char";
+	mso-style-link:"Título 6";
+	font-family:"Cambria",serif;
+	color:#243F60;
+	font-style:italic;}
+span.Ttulo7Char
+	{mso-style-name:"Título 7 Char";
+	mso-style-link:"Título 7";
+	font-family:"Cambria",serif;
+	color:#404040;
+	font-style:italic;}
+span.Ttulo8Char
+	{mso-style-name:"Título 8 Char";
+	mso-style-link:"Título 8";
+	font-family:"Cambria",serif;
+	color:#404040;}
+span.Ttulo9Char
+	{mso-style-name:"Título 9 Char";
+	mso-style-link:"Título 9";
+	font-family:"Cambria",serif;
+	color:#404040;
+	font-style:italic;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
 
 </head>
 
-<body>
-    <h1>Manual do usuÃ¡rio</h1>
-</body>
+<body lang=PT-BR link=blue vlink=purple>
 
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>Manual do Usuário</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:32.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoTocHeading style='text-indent:0cm'>Sumário</p>
+
+<p class=MsoToc1><a href="#_Toc484164646">1<span style='color:windowtext;
+text-decoration:none'>       </span>Adicionar tarefa<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164647">2<span style='color:windowtext;
+text-decoration:none'>       </span>Remover tarefa<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164648">3<span style='color:windowtext;
+text-decoration:none'>       </span>Alterar tarefa<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164649">4<span style='color:windowtext;
+text-decoration:none'>       </span>Mudar estado da tarefa<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164650">5<span style='color:windowtext;
+text-decoration:none'>       </span>Reportar erro<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164651">6<span style='color:windowtext;
+text-decoration:none'>       </span>Ajuda<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc484164652">7<span style='color:windowtext;
+text-decoration:none'>       </span>Atualizar<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<h1><a name="_Toc484164646">1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Adicionar tarefa</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=601 height=356 id="Imagem 2" src="manual_arquivos/image001.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para
+adicionar uma nova tarefa o usuário deverá clicar no ícone “</span><span
+style='font-size:12.0pt;line-height:115%'><img width=18 height=18 id="Imagem 25"
+src="manual_arquivos/image002.png"></span><span style='font-size:12.0pt;
+line-height:115%'>” localizado no canto esquerdo superior da tela. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=602 height=356 id="Imagem 1" src="manual_arquivos/image003.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='line-height:115%'>O
+usuário deverá preencher os campos “nome”, “Descrição”, além de selecionar o
+“Estado” e definir a “Importância”. Após ter feito isso, basta clicar no
+símbolo “</span><span style='line-height:115%;color:#545454;background:white'><img
+width=23 height=23 id="Imagem 20" src="manual_arquivos/image004.png"></span><span
+style='line-height:115%;color:#545454;background:white'>”</span><span
+style='line-height:115%'>e a tarefa será adicionada.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='line-height:115%'>Obs:
+é possível deixar os campos “Nome” e “Descrição” vazios, e assim o programa
+atribuirá um nome padrão para esses campos. Quando isso ocorrer, o sistema
+pedirá a confirmação de que se deseja manter os campos em branco.</span></p>
+
+<h1><a name="_Toc484164647">2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Remover tarefa</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=385 height=197 id="Imagem 8" src="manual_arquivos/image005.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para excluir
+uma tarefa, basta clicar no ícone <b>“</b></span><span style='font-size:10.5pt;
+line-height:115%;font-family:"MS Gothic";color:red;background:white'><img
+width=19 height=19 id="Imagem 19" src="manual_arquivos/image006.png"></span><span
+style='font-size:10.5pt;line-height:115%;font-family:"MS Gothic";background:
+white'>”</span><span style='font-size:12.0pt;line-height:115%'>contido no canto
+inferior esquerdo da tarefa que se deseja excluir.</span><span
+style='font-size:10.5pt;line-height:115%;font-family:"MS Gothic";background:
+white'> </span></p>
+
+<h1><a name="_Toc484164648">3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alterar tarefa</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=379 height=192 id="Imagem 10" src="manual_arquivos/image007.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para alterar
+uma tarefa, basta clicar no ícone “</span><img width=22 height=22 id="Imagem 18"
+src="manual_arquivos/image008.png"><span style='font-size:12.0pt;line-height:
+115%'>”contido no canto inferior esquerdo da tarefa que se deseja alterar.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=602 height=356 id="Imagem 12" src="manual_arquivos/image003.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Após isso
+basta realizar as alterações desejadas e clicar no ícone “</span><span
+style='font-family:"MS Gothic";color:#545454;background:white'><img width=23
+height=23 id="Imagem 21" src="manual_arquivos/image009.png"></span><span
+style='font-family:"MS Gothic";color:#545454;background:white'>”.</span></p>
+
+<h1><a name="_Toc484164649">4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Mudar estado da tarefa</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=389 height=195 id="Imagem 9" src="manual_arquivos/image010.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para mudar o
+estado de uma tarefa, basta clicar nos ícones “</span><span style='font-size:
+12.0pt;line-height:115%'><img width=23 height=23 id="Imagem 22"
+src="manual_arquivos/image011.png"></span><span style='font-size:12.0pt;
+line-height:115%'>” ou “</span><span style='font-size:12.0pt;line-height:115%'><img
+width=23 height=23 id="Imagem 23" src="manual_arquivos/image012.png"></span><span
+style='font-size:12.0pt;line-height:115%'>”, de acordo com o destino desejado
+“Feito” ou “Fazer”. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>&nbsp;</span></p>
+
+<h1><a name="_Toc484164650">5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Reportar erro</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=602 height=356 id="Imagem 3" src="manual_arquivos/image013.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Caso ocorra
+um erro durante o uso do software, o usuário poderá reporta-lo, enviando uma
+mensagem para os desenvolvedores. Para isso, basta clicar no ícone “</span><span
+style='font-size:12.0pt;line-height:115%'><img width=20 height=20 id="Imagem 13"
+src="manual_arquivos/image014.png"></span><span style='font-size:12.0pt;
+line-height:115%'> “ presente no canto inferior esquerdo da tela. Após isso,
+basta preencher os campos “Seu endereço de e-mail” e “Sua mensagem” e clicar no
+ícone “</span><span style='font-size:12.0pt;line-height:115%'><img width=20
+height=20 id="Imagem 14" src="manual_arquivos/image015.png"></span><span
+style='font-size:12.0pt;line-height:115%'>” para que a mesma seja enviada.</span></p>
+
+<h1><a name="_Toc484164651">6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ajuda</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=602 height=356 id="Imagem 4" src="manual_arquivos/image016.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=601 height=355 id="Imagem 5" src="manual_arquivos/image017.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para obter
+ajuda, basta clicar no ícone “ </span><span style='font-size:12.0pt;line-height:
+115%'><img width=20 height=20 id="Imagem 15" src="manual_arquivos/image018.png"></span><span
+style='font-size:12.0pt;line-height:115%'>” e será aberta a janela acima, onde pode-se
+obter várias abas de ajuda de acordo com a necessidade.</span></p>
+
+<h1><a name="_Toc484164652">7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Atualizar</a></h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'><img
+width=601 height=356 id="Imagem 16" src="manual_arquivos/image019.png"></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%'>Para
+atualizar as tarefas do sistema, basta clicar no ícone “</span><span
+style='font-size:12.0pt;line-height:115%'><img width=23 height=23 id="Imagem 17"
+src="manual_arquivos/image020.png"></span><span style='font-size:12.0pt;
+line-height:115%'>”, localizado no canto inferior esquerdo da tela.</span></p>
+
+</div>
+
+</body>
 
 </html>

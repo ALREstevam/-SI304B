@@ -26,7 +26,7 @@ namespace Agenda
         public void resize()
         {
             this.Width = Parent.Width-30;
-            this.labelDescription.MaximumSize = new Size(this.tableLayoutPanel1.Width, 0);
+            this.textBoxDescription.MaximumSize = new Size(this.tableLayoutPanel1.Width, 0);
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -36,13 +36,16 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlDeleteString(), conn);
 
             this.Dispose();
-            //myparent.dbToUi();
+            myparent.updateStatus("Deletando tarefa");
+
+            myparent.dbToUi();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             AdicionarEditar addedit = new AdicionarEditar(agd, myparent);
             addedit.Show();
+            myparent.updateStatus("Editando tarefa");
         }
 
         private void TaskElement_Load(object sender, EventArgs e)
@@ -52,18 +55,21 @@ namespace Agenda
             {
                 case 1:
                     this.tableLayoutPanel1.BackColor = Color.FromArgb(255, 115, 109);
-                    this.labelDescription.ForeColor = Color.FromArgb(46, 0, 0);
+                    this.textBoxDescription.BackColor = Color.FromArgb(255, 115, 109);
+                    this.textBoxDescription.ForeColor = Color.FromArgb(46, 0, 0);
                     this.labelTitle.ForeColor = Color.FromArgb(46, 0, 0);
                     this.buttonMoveLeft.Dispose();
                     break;
                 case 2:
                     this.tableLayoutPanel1.BackColor = Color.FromArgb(255, 235, 105);
-                    this.labelDescription.ForeColor = Color.FromArgb(76, 36, 4);
+                    this.textBoxDescription.BackColor = Color.FromArgb(255, 235, 105);
+                    this.textBoxDescription.ForeColor = Color.FromArgb(76, 36, 4);
                     this.labelTitle.ForeColor = Color.FromArgb(76, 36, 4);
                     break;
                 case 3:
                     this.tableLayoutPanel1.BackColor = Color.FromArgb(125, 182, 255);
-                    this.labelDescription.ForeColor = Color.FromArgb(0, 0, 46);
+                    this.textBoxDescription.BackColor = Color.FromArgb(125, 182, 255);
+                    this.textBoxDescription.ForeColor = Color.FromArgb(0, 0, 46);
                     this.labelTitle.ForeColor = Color.FromArgb(0, 0, 46);
                     this.buttonMoveRight.Dispose();
                     break;
@@ -71,7 +77,7 @@ namespace Agenda
             this.resize();
 
             labelTitle.Text = this.agd.itemName;
-            labelDescription.Text = this.agd.itemDescription;
+            textBoxDescription.Text = this.agd.itemDescription;
         }
 
         private void buttonMoveLeft_Click(object sender, EventArgs e)
@@ -83,6 +89,7 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlUpdateString(), conn);
 
             myparent.dbToUi();
+            myparent.updateStatus("Movendo tarefa para esquerda");
         }
 
         private void buttonMoveRight_Click(object sender, EventArgs e)
@@ -94,6 +101,17 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlUpdateString(), conn);
 
             myparent.dbToUi();
+            myparent.updateStatus("Movendo tarefa para direita");
+        }
+
+        private void labelTitle_DoubleClick(object sender, EventArgs e)
+        {
+            buttonEdit.PerformClick();
+        }
+
+        private void textBoxDescription_DoubleClick(object sender, EventArgs e)
+        {
+            buttonEdit.PerformClick();
         }
 
         ///**///

@@ -166,5 +166,7 @@ namespace Agenda
             trackBarImportance.Value = 0;
             labelImportance.Text = 0.ToString();
         }
+
+
     }
 }

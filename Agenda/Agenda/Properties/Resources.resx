@@ -253,4 +253,67 @@
   <data name="manual" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Manual\manual.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="image001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image009.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image015.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image016.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image018.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image019.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual_arquivos\image020.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manual1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Manual\manual.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -23,45 +23,38 @@ namespace Agenda
         private void Form1_Load(object sender, EventArgs e)
         {
             responsiveDesignUpdate();
-            toolStripStatusLabel1.Text = "Carregando dados do banco de dados";
             dbToUi();
 
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Atualizando design dos quadros";
             responsiveDesignUpdate();
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Atualizando design dos quadros";
             responsiveDesignUpdate();
         }
 
         public void dbToUi()
         {
-            toolStripStatusLabel1.Text = "Colocando dados do banco na tela";
             flowLayoutPanelColumn1.Controls.Clear();
             flowLayoutPanelColumn2.Controls.Clear();
             flowLayoutPanelColumn3.Controls.Clear();
 
 
-            toolStripStatusLabel1.Text = "Conectando ao banco";
+            updateStatus("Conectando ao banco de dados");
             DatabaseController dbcontr = new DatabaseController("database.db");
 
             if (dbcontr.dbCreate())
             {
-                toolStripStatusLabel1.Text = "Abrindo janela";
+                updateStatus("Criando banco");
                 HelpForm hlp = new HelpForm(2);
                 hlp.Show();
 
             }
             
-            
-
-
 
             AgendaItem agd = new AgendaItem();
             List<AgendaItem> lista = new List<AgendaItem>();
@@ -80,7 +73,7 @@ namespace Agenda
             flowLayoutPanelColumn3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
 
 
-            toolStripStatusLabel1.Text = "Colocando dados do banco na tela";
+            updateStatus("Imprimindo dados do banco");
             foreach (AgendaItem elem in lista)
             {
                 switch (elem.itemType)
@@ -110,7 +103,7 @@ namespace Agenda
 
         private void responsiveDesignUpdate()
         {
-            toolStripStatusLabel1.Text = "Atualizando design";
+            updateStatus("Redimensionando quadros");
             //Altura e largura das colunas
             flowLayoutPanelColumn1.Height = flowLayoutPanelLine.Height - 10;
             flowLayoutPanelColumn2.Height = flowLayoutPanelLine.Height - 10;
@@ -150,21 +143,21 @@ namespace Agenda
 
         private void buttonAddTask_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Abrindo janela";
+            updateStatus("Abrindo janela para adicionar tarefa");
             AdicionarEditar addedit = new AdicionarEditar(this);
             addedit.Show();
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Abrindo janela";
+            updateStatus("Abrindo janela de ajuda");
             HelpForm hlp = new HelpForm(0);
             hlp.Show();
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Atualizando dados";
+            updateStatus("Recarregando dados");
             dbToUi();
         }
 
@@ -175,9 +168,34 @@ namespace Agenda
 
         private void buttonBugReport_Click(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Abrindo janela";
+            updateStatus("Abrindo janela de bug report");
             HelpForm hlp = new HelpForm(3);
             hlp.Show();
+        }
+
+        public void updateStatus(string newStatus)
+        {
+            toolStripStatusLabel1.Text = "Último status: " + newStatus + ".";
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            buttonAddTask.PerformClick();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            buttonAddTask.PerformClick();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            buttonAddTask.PerformClick();
         }
     }
 }

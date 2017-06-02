@@ -57,7 +57,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(53, 8);
-            this.textBoxName.MaxLength = 50;
+            this.textBoxName.MaxLength = 45;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(318, 20);
             this.textBoxName.TabIndex = 1;
@@ -65,9 +65,10 @@
             // textBoxDescription
             // 
             this.textBoxDescription.Location = new System.Drawing.Point(15, 56);
-            this.textBoxDescription.MaxLength = 500;
+            this.textBoxDescription.MaxLength = 495;
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxDescription.Size = new System.Drawing.Size(356, 109);
             this.textBoxDescription.TabIndex = 2;
             this.textBoxDescription.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
