@@ -88,9 +88,9 @@ namespace Agenda
             System.Diagnostics.Process.Start("http://a166348.000webhostapp.com/Manual%20do%20Usu%C3%A1rio.pdf");
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("http://a166348.000webhostapp.com/Manual%20do%20Usu%C3%A1rio.pdf");
         }
     }
 }

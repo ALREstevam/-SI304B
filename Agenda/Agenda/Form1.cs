@@ -44,12 +44,12 @@ namespace Agenda
             flowLayoutPanelColumn3.Controls.Clear();
 
 
-            updateStatus("Conectando ao banco de dados");
+            updateStatus("conectando ao banco de dados");
             DatabaseController dbcontr = new DatabaseController("database.db");
 
             if (dbcontr.dbCreate())
             {
-                updateStatus("Criando banco");
+                updateStatus("criando banco");
                 HelpForm hlp = new HelpForm(2);
                 hlp.Show();
 
@@ -73,7 +73,7 @@ namespace Agenda
             flowLayoutPanelColumn3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
 
 
-            updateStatus("Imprimindo dados do banco");
+            updateStatus("mostrando dados do banco na interface");
             foreach (AgendaItem elem in lista)
             {
                 switch (elem.itemType)
@@ -103,7 +103,7 @@ namespace Agenda
 
         private void responsiveDesignUpdate()
         {
-            updateStatus("Redimensionando quadros");
+            updateStatus("redimensionando quadros");
             //Altura e largura das colunas
             flowLayoutPanelColumn1.Height = flowLayoutPanelLine.Height - 10;
             flowLayoutPanelColumn2.Height = flowLayoutPanelLine.Height - 10;
@@ -143,21 +143,21 @@ namespace Agenda
 
         private void buttonAddTask_Click(object sender, EventArgs e)
         {
-            updateStatus("Abrindo janela para adicionar tarefa");
+            updateStatus("abrindo janela para adicionar tarefa");
             AdicionarEditar addedit = new AdicionarEditar(this);
             addedit.Show();
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            updateStatus("Abrindo janela de ajuda");
+            updateStatus("abrindo janela de ajuda");
             HelpForm hlp = new HelpForm(0);
             hlp.Show();
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
         {
-            updateStatus("Recarregando dados");
+            updateStatus("recarregando dados");
             dbToUi();
         }
 
@@ -168,7 +168,7 @@ namespace Agenda
 
         private void buttonBugReport_Click(object sender, EventArgs e)
         {
-            updateStatus("Abrindo janela de bug report");
+            updateStatus("abrindo janela de bug report");
             HelpForm hlp = new HelpForm(3);
             hlp.Show();
         }

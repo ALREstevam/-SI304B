@@ -36,7 +36,7 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlDeleteString(), conn);
 
             this.Dispose();
-            myparent.updateStatus("Deletando tarefa");
+            myparent.updateStatus("deletando tarefa");
 
             myparent.dbToUi();
         }
@@ -45,7 +45,7 @@ namespace Agenda
         {
             AdicionarEditar addedit = new AdicionarEditar(agd, myparent);
             addedit.Show();
-            myparent.updateStatus("Editando tarefa");
+            myparent.updateStatus("editando tarefa");
         }
 
         private void TaskElement_Load(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlUpdateString(), conn);
 
             myparent.dbToUi();
-            myparent.updateStatus("Movendo tarefa para esquerda");
+            myparent.updateStatus("movendo tarefa para esquerda");
         }
 
         private void buttonMoveRight_Click(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace Agenda
             contr.dbExecuteQuery(agd.toSqlUpdateString(), conn);
 
             myparent.dbToUi();
-            myparent.updateStatus("Movendo tarefa para direita");
+            myparent.updateStatus("movendo tarefa para direita");
         }
 
         private void labelTitle_DoubleClick(object sender, EventArgs e)
