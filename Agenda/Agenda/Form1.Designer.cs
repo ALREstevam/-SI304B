@@ -121,7 +121,7 @@
             this.buttonHelp.BackColor = System.Drawing.Color.Transparent;
             this.buttonHelp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHelp.BackgroundImage")));
             this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHelp.Cursor = System.Windows.Forms.Cursors.Help;
             this.buttonHelp.FlatAppearance.BorderSize = 0;
             this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

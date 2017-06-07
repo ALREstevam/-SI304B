@@ -27,12 +27,10 @@ namespace Database
         {
             if (!File.Exists(this.filePath))
             {
-                SQLiteConnection.CreateFile(this.filePath);
-                SQLiteConnection conn = dbConnect();
+                SQLiteConnection.CreateFile(this.filePath);//Se .db não existir
+                SQLiteConnection conn = dbConnect();//Conectar
 
                 StringBuilder sql = new StringBuilder();
-                /*sql.AppendLine("CREATE TABLE IF NOT EXISTS tb_tasks ([id_task] INTEGER PRIMARY KEY AUTOINCREMENT,");
-                sql.AppendLine("[name_task] VARCHAR(30) NOT NULL)");*/
 
                 sql.AppendLine("CREATE TABLE IF NOT EXISTS AgendaItem (");
                 sql.AppendLine("[id] integer PRIMARY KEY AUTOINCREMENT,");
@@ -42,9 +40,14 @@ namespace Database
                 sql.AppendLine("[importance] integer NOT NULL");
                 sql.AppendLine(");");
 
-                if(dbExecuteQuery(sql.ToString(), conn))
+                if(dbExecuteQuery(sql.ToString(), conn))//Tentando criar o banco
                 {
-                    MessageBox.Show("O banco de dados foi criado","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("O banco de dados foi criado com sucesso.","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }else//Caso não ocorra com sucesso
+                {
+                    System.IO.File.Delete(this.filePath);//Deleta o arquivo criado
+                    MessageBox.Show("Erro ao criar o banco de dados, o arquivo criado será deletado.\nPor favor, inclua essa mensagem num bug report.", 
+                        "Erro ao criar banco de dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 

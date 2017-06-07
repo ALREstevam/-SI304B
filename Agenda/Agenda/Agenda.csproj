@@ -136,7 +136,7 @@
       <DependentUpon>TaskElement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Agenda_TemporaryKey.pfx" />
-    <None Include="Manual\manual.pdf" />
+    <None Include="Manual\Manual do Usuário.pdf" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -154,27 +154,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Manual\manual_arquivos\image009.png" />
-    <None Include="Manual\manual_arquivos\image008.png" />
-    <None Include="Manual\manual_arquivos\image007.png" />
-    <None Include="Manual\manual_arquivos\image006.png" />
-    <None Include="Manual\manual_arquivos\image005.png" />
-    <None Include="Manual\manual_arquivos\image004.png" />
-    <None Include="Manual\manual_arquivos\image003.png" />
-    <None Include="Manual\manual_arquivos\image002.png" />
-    <None Include="Manual\manual_arquivos\image001.png" />
-    <None Include="Manual\manual_arquivos\image020.png" />
-    <None Include="Manual\manual_arquivos\image019.png" />
-    <None Include="Manual\manual_arquivos\image018.png" />
-    <None Include="Manual\manual_arquivos\image017.png" />
-    <None Include="Manual\manual_arquivos\image016.png" />
-    <None Include="Manual\manual_arquivos\image015.png" />
-    <None Include="Manual\manual_arquivos\image014.png" />
-    <None Include="Manual\manual_arquivos\image013.png" />
-    <None Include="Manual\manual_arquivos\image012.png" />
-    <None Include="Manual\manual_arquivos\image011.png" />
-    <None Include="Manual\manual_arquivos\image010.png" />
-    <None Include="Manual\manual.html" />
     <None Include="Icons\Todo List_96px.ico" />
     <None Include="Icons\About_96px.ico" />
     <None Include="Icons\Cancel_96px_3.png" />
@@ -211,6 +190,7 @@
     <Content Include="Icons\Forward_96px.png" />
     <Content Include="Icons\Ok_96px.png" />
     <None Include="Icons\Paper Plane_96px.png" />
+    <None Include="Icons\PaperPlane.png" />
     <Content Include="Icons\Pin 2_96px.png" />
     <Content Include="Icons\Plus_96px.png" />
     <Content Include="Icons\Recurring Appointment_96px.png" />
@@ -231,6 +211,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.1\build\net46\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

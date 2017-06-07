@@ -80,6 +80,26 @@ namespace Agenda
                 return;
             }
 
+            SmtpClient client = new SmtpClient();
+            client.Port = 587;
+            client.Host = "smtp.gmail.com";
+            client.EnableSsl = true;
+            client.Timeout = 10000;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential("grupo8corp@gmail.com", "gcorp@78");
+
+            MailMessage mm = new MailMessage(mailFrom, "grupo8corp@gmail.com", "Agenda - Bug report", message);
+            mm.BodyEncoding = UTF8Encoding.UTF8;
+            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+            client.Send(mm);
+
+
+
+
+
+
             MessageBox.Show("Mensagem enviada com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -90,7 +110,9 @@ namespace Agenda
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://a166348.000webhostapp.com/Manual%20do%20Usu%C3%A1rio.pdf");
+            string manualLink = "http://a166348.000webhostapp.com/Manual%20do%20Usu%C3%A1rio.pdf";
+            Clipboard.SetData(DataFormats.Text, (Object)manualLink);
+            System.Diagnostics.Process.Start(manualLink);
         }
     }
 }

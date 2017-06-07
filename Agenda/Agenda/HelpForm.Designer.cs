@@ -182,9 +182,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(186, 198);
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(176, 200);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 86);
+            this.button1.Size = new System.Drawing.Size(181, 86);
             this.button1.TabIndex = 1;
             this.button1.Text = "Abrir manual do usuário no seu leitor de PDF padrão\r\n";
             this.button1.UseVisualStyleBackColor = true;
@@ -452,7 +453,7 @@
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox6.Image = global::Agenda.Properties.Resources.About_48px_png;
+            this.pictureBox6.Image = global::Agenda.Properties.Resources.About_96px;
             this.pictureBox6.Location = new System.Drawing.Point(6, 199);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(51, 51);
